@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import WeightForm from './components/WeightForm';
+import HeightForm from './components/HeightForm';
+import CalculateIMC from './components/CalculateIMC';
+import ShowResult from './components/ShowResult';
+import TableView from './components/TableView';
 
 function App() {
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
+  const [result, setResult] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {WeightForm(weight, setWeight)}
+      {HeightForm(height, setHeight)}
+      {CalculateIMC(weight, height, setResult)}
+      {ShowResult(result)}
+      {TableView()}
+    </>
   );
 }
 
