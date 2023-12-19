@@ -15,7 +15,7 @@ Este repositório contém uma aplicação simples em React desenvolvida para tre
 * Tabela de Classificação: Uma tabela é exibida, fornecendo uma referência para a classificação do IMC, ajudando os usuários a interpretar os resultados. 
 
 # Como Utilizar 
-1. Clone este repositório: git clone https://github.com/FelipeDinizSantos/Filtrando-Carros-por-Categoria.git
+1. Clone este repositório: git clone https://github.com/FelipeDinizSantos/Calculadora-IMC-React.git
 2. Navegue até o diretório do projeto: cd nome-do-repositorio
 3. Instale as dependências: npm install
 4. Inicie a aplicação: npm start
