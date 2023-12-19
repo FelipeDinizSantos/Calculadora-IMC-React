@@ -2,8 +2,7 @@
 
 Este repositório contém uma aplicação simples em React desenvolvida para treinar os conceitos fundamentais do framework React. A aplicação consiste em uma calculadora de Índice de Massa Corporal (IMC), permitindo que os usuários calculem seu IMC com base no peso e altura fornecidos.
 
-# Funcionalidades 
-
+# Funcionalidades
 ## Preenchimento de Dados
 * Formulário de Peso: Os usuários podem inserir seu peso no formulário dedicado.
 * Formulário de Altura: Os usuários podem inserir sua altura no formulário correspondente.
