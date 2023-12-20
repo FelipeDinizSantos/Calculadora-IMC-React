@@ -1,8 +1,8 @@
-const CalculateIMC = (weight, height, setResult)=>
+const CalculateIMC = (props)=>
 {
   const calc = ()=>
   {
-    setResult(weight/(height ** 2));
+    props.setResult(props.weight/(props.height ** 2));
   } 
 
   return(

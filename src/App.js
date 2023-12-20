@@ -12,11 +12,11 @@ function App() {
 
   return (
     <>
-      {WeightForm(weight, setWeight)}
-      {HeightForm(height, setHeight)}
-      {CalculateIMC(weight, height, setResult)}
-      {ShowResult(result)}
-      {TableView()}
+      <WeightForm weight={weight} setWeight={setWeight} />
+      <HeightForm height={height} setHeight={setHeight} />
+      <CalculateIMC weight={weight} height={height} setResult={setResult} />
+      <ShowResult result={result} />
+      <TableView />
     </>
   );
 }

@@ -1,8 +1,8 @@
-const ShowResult = (result)=>
+const ShowResult = (props)=>
 {
   return(
     <div>
-      <p>Resultado: {result.toFixed(2)}</p>
+      <p>Resultado: {props.result.toFixed(2)}</p>
     </div>
   )
 }

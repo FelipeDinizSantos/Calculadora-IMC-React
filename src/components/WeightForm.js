@@ -1,9 +1,9 @@
-const WeightForm = (weight, setWeight)=>
+const WeightForm = (props)=>
 {
     return(
         <div>
           <label>Peso: </label>
-          <input type='text' value={weight} onChange={(e)=>setWeight(e.target.value)}/>
+          <input type='text' value={props.weight} onChange={(e)=>props.setWeight(e.target.value)}/>
         </div>
       )
 }

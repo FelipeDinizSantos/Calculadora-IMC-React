@@ -1,9 +1,9 @@
-const HeightForm = (height, setHeight)=>
+const HeightForm = (props)=>
 {
   return(
     <div>
       <label>Altura: </label>
-      <input type='text' value={height} onChange={(e)=>setHeight(e.target.value)}/>
+      <input type='text' value={props.height} onChange={(e)=>props.setHeight(e.target.value)}/>
     </div>
   )
 }
