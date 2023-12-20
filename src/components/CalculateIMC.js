@@ -1,15 +1,25 @@
-const CalculateIMC = (props)=>
+import React from 'react';
+
+export default class CalculateIMC extends React.Component
 {
-  const calc = ()=>
+  constructor(props)
   {
-    props.setResult(props.weight/(props.height ** 2));
-  } 
+    super(props);
 
-  return(
-    <div>
-      <button onClick={calc}>Calcular</button>
-    </div>
-  )
+    this.calc = this.calc.bind(this);
+  }
+  
+  calc()
+  {
+    this.props.setResult(this.props.weight/(this.props.height ** 2));
+  }
+
+  render()
+  {
+    return(
+      <div>
+        <button onClick={this.calc}>Calcular</button>
+      </div>
+    )
+  }
 }
-
-export default CalculateIMC;
