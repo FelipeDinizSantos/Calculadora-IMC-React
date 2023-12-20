@@ -11,8 +11,8 @@ export default class WeightForm extends React.Component
   {
     return(
       <div>
-          <label>Peso: </label>
-          <input type='text' value={this.props.weight} onChange={(e)=>this.props.setWeight(e.target.value)}/>
+        <label>Peso: </label>
+        <input type='text' value={this.props.weight} onChange={(e)=>this.props.setWeight(e.target.value)}/>
       </div>
     )
   }
